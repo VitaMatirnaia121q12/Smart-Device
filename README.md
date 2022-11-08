@@ -1,1 +1,1 @@
-# Smatr-Device
+# Smart-Device
