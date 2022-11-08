@@ -1,0 +1,120 @@
+.advantages__list {
+  margin: 121px 0;
+  display: grid;
+  grid-template-columns: 595px 595px;
+  grid-template-rows: 300px 300px;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 122px;
+
+  @include tablet {
+    margin: 82px 0 79px 0;
+    grid-template-columns: 320px 320px;
+    grid-template-rows: 360px 360px;
+    gap: 28px;
+    padding: 0;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 47px 0;
+    padding: 0;
+  }
+}
+
+.advantages__item {
+  list-style-type: none;
+  border: 1px solid #ebebeb;
+  padding: 40px 44px 35px 45px;
+  border-left: 5px solid #00b2ff;
+  min-height: 300px;
+
+  @include tablet {
+    min-width: 320px;
+    max-height: 360px;
+    height: 100%;
+    padding: 40px 30px 35px 39px;
+  }
+
+  @include mobile {
+    padding: 18px 30px 35px 25px;
+    min-height: 340px;
+  }
+}
+
+.advantages__item:last-child, .advantages__item:nth-child(3) {
+  @include mobile {
+    min-height: 325px;
+  }
+
+  .advantages__description {
+    margin-top: 14px;
+  }
+}
+
+.advantages__item:hover {
+  background-color: #00b2ff;
+}
+
+.advantages__item:hover h3,
+.advantages__item:hover p {
+  color: #ebebeb;
+}
+
+.advantages__item:hover svg {
+  fill: #ebebeb;
+}
+
+.advantages__svg {
+  fill: #00b2ff;
+
+  @include mobile {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.advantages__title {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  color: #00b2ff;
+  margin: 0;
+  margin-top: 15px;
+
+  @include tablet {
+    margin-top: 9px;
+  }
+
+  @include mobile {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+.advantages__description {
+  margin: 0;
+  margin-top: 13px;
+  max-width: 505px;
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: #041827;
+
+  @include tablet {
+    margin-top: 7px;
+    max-width: 231px;
+  }
+
+  @include mobile {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+}

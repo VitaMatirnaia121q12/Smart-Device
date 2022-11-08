@@ -1,0 +1,16 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fdff;
+  min-height: 1290px;
+
+  @include tablet {
+    min-height: 1372px;
+    padding: 0 50px;
+  }
+
+  @include mobile {
+    min-height: 1905px;
+    padding: 0 25px;
+  }
+}

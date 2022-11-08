@@ -1,0 +1,61 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 120px;
+  background: linear-gradient(180deg, #041827 84.9%, transparent 100%);
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+
+  @include tablet {
+    min-height: 100px;
+  }
+
+  @include mobile {
+    min-height: 70px;
+  }
+}
+
+.header__container {
+  @include tablet {
+    padding: 0 66px 0 50px;
+    justify-content: space-between;
+    max-width: 1023px;
+    width: 100%;
+    min-width: 770px;
+  }
+
+  @include mobile {
+    padding: 6px 33px 15px 26px;
+    justify-content: space-between;
+    max-width: 767px;
+    width: 100%;
+    min-width: 320px;
+  }
+}
+
+.header__button {
+  display: flex;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  padding: 10px 15px;
+  border: 1px solid #f2f5f7;
+  border-radius: 3px;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}

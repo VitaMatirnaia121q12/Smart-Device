@@ -1,0 +1,31 @@
+.logo {
+  margin-right: 160px;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  @include mobile {
+    margin: 0;
+  }
+}
+
+@media (min-width: 770px) {
+  .logo__min {
+    display: none;
+  }
+
+  .logo__max {
+    display: block;
+  }
+}
+
+@media (min-width: 320px) {
+  .logo__max {
+    display: none;
+  }
+
+  .logo__min {
+    display: block;
+  }
+}

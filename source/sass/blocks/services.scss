@@ -1,0 +1,221 @@
+.services {
+  min-height: 960px;
+  background-color: #041827;
+
+  @include tablet {
+    min-height: 1080px;
+  }
+
+  @include mobile {
+    min-height: 1050px;
+  }
+}
+
+.services__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 64px;
+
+  @include tablet {
+    padding: 0 50px;
+  }
+
+  @include mobile {
+    padding: 45px 25px 86px 25px;
+  }
+}
+
+.services__title {
+  margin-top: 67px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+  margin-bottom: 52px;
+
+  @include tablet {
+    margin: 0;
+    margin-top: 56px;
+  }
+
+  @include mobile {
+    margin: 0;
+    margin-bottom: 27px;
+    font-size: 28px;
+    line-height: 40px;
+    max-width: 200px;
+  }
+}
+
+
+.services__min {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.services__max {
+  display: block;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  gap: 85px;
+  padding: 0;
+  margin: 0;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-top: 37px;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin: 0;
+  }
+}
+
+.services__item:not(:last-child) {
+  @include tablet {
+    margin-bottom: 30px;
+  }
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}
+
+.services__item {
+  list-style-type: none;
+  position: relative;
+
+  @include tablet {
+    max-width: 670px;
+    min-height: 250px;
+    width: 100%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.services__item:first-child .services__link {
+  display: block;
+  padding: 50px 0 0 40px;
+  background-color: #00b2ff;
+  background-image: url('../img/background/background-prodictiont.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @include tablet {
+    background-image: url('../img/background/background-prodictiont-tablet.jpg');
+    padding: 35px 0 0 45px;
+  }
+
+  @include mobile {
+    background-image: url('../img/background/background-prodictiont-mobile.jpg');
+    padding: 27px 0 0 30px;
+    min-height: 250px;
+  }
+}
+
+.services__item:nth-child(2) .services__link {
+  display: block;
+  padding: 50px 0 0 40px;
+  background-color: #041827;
+  background-image: url('../img/background/background-montage.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @include tablet {
+    background-image: url('../img/background/background-montage-tablet.jpg');
+    padding: 35px 0 0 45px;
+  }
+
+  @include mobile {
+    background-image: url('../img/background/background-montage-mobile.jpg');
+    padding: 27px 0 0 30px;
+    min-height: 250px;
+  }
+}
+
+.services__item:last-child .services__link {
+  display: block;
+  padding: 50px 0 0 40px;
+  background-color: #041827;
+  background-image: url('../img/background/background-accessories.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @include tablet {
+    background-image: url('../img/background/background-accessories-tablet.jpg');
+    padding: 35px 0 0 45px;
+  }
+
+  @include mobile {
+    background-image: url('../img/background/background-accessories-mobile.jpg');
+    padding: 27px 0 0 30px;
+    min-height: 250px;
+  }
+}
+
+.services__name {
+  margin: 0;
+  padding-bottom: 540px;
+  max-width: 160px;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+
+  @include tablet {
+    padding-bottom: 155px;
+  }
+
+  @include mobile {
+    padding-bottom: 130px;
+    font-size: 18px;
+    max-width: 134px;
+  }
+}
+
+.services__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 60px;
+  min-height: 60px;
+  background: #00b2ff;
+  border-radius: 3px 0px 0px 0px;
+  border: none;
+
+  @include mobile {
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
+
+.services__svg {
+  fill: none;
+}

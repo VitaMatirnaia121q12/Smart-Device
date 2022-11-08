@@ -1,0 +1,49 @@
+.popap {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+}
+
+.popap__name input,
+.popap__phone input,
+.popap__question textarea {
+  background: rgba(4, 20, 39, 0.15);
+  border-radius: 3px;
+  width: 100%;
+  padding: 15px;
+  border: none;
+}
+
+.popap__name input,
+.popap__phone input {
+  margin-bottom: 20px;
+}
+
+.popap__question textarea {
+  margin-bottom: 25px;
+}
+
+.popap__name input::placeholder,
+.popap__phone input::placeholder,
+.popap__question textarea::placeholder {
+  color: #ffffff;
+}
+
+.popap__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.popap__processing {
+  max-width: 420px;
+  padding-left: 9px;
+}
+
+.popap__processing label {
+  padding-left: 28px;
+}
+
+.popap__button {
+  width: 100%;
+  margin-bottom: 20px;
+}
