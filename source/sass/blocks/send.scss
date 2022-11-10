@@ -1,0 +1,31 @@
+.send {
+  max-width: 265px;
+  width: 100%;
+  margin-right: 50px;
+  padding: 14px 25px;
+  background: #041427;
+  border-radius: 3px;
+  border: none;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  @include tablet {
+    margin-right: 85px;
+    padding: 15px 25px 11px 25px;
+  }
+
+  @include mobile {
+    padding: 15px 25px 11px 25px;
+    max-width: 270px;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 23px;
+  }
+}

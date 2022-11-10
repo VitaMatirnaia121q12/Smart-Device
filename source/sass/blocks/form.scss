@@ -64,7 +64,6 @@
   width: 100%;
   background: rgba(4, 20, 39, 0.15);
   border-radius: 3px;
-  min-height: 155px;
   border: none;
   padding: 25px 15px;
   min-height: 155px;
@@ -95,77 +94,8 @@
   }
 }
 
-.form__button {
-  max-width: 265px;
-  width: 100%;
-  margin-right: 50px;
-  padding: 14px 25px;
-  background: #041427;
-  border-radius: 3px;
-  border: none;
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: #ffffff;
-
-  @include tablet {
-    margin-right: 85px;
-    padding: 15px 25px 11px 25px;
-  }
-
-  @include mobile {
-    padding: 15px 25px 11px 25px;
-    max-width: 270px;
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 23px;
-  }
-}
-
-.form__processing {
-  max-width: 246px;
-  display: flex;
-  align-items: center;
-  position: relative;
-
-  @include mobile {
-    padding-left: 5px;
-  }
-}
-
-.form__processing span {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border: 1px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
-}
-
 .form__input:checked + .form__style {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0.988525 2.33333L3.7778 5L7.96171 1' stroke='white'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
-
-.form__processing label {
-  color: #ffffff;
-  opacity: 0.8;
-  font-size: 14px;
-  line-height: 16px;
-  padding-left: 25px;
-}
-
-.form__processing input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  cursor: pointer;
 }

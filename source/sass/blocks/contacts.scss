@@ -10,7 +10,6 @@
 }
 
 .contacts::after {
-
   @include mobile {
     content: "";
     height: 1px;
@@ -23,7 +22,7 @@
 }
 
 .contacts__title {
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -38,7 +37,7 @@
   margin: 0;
   margin-top: 20px;
   padding: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   max-width: 310px;
 
@@ -49,6 +48,7 @@
 
 .contacts__item {
   list-style-type: none;
+  min-width: 320px;
 }
 
 .contacts__item:not(:last-child) {
@@ -74,7 +74,6 @@
 }
 
 .contacts__container {
-
   @include mobile {
     display: flex;
     flex-direction: row;
@@ -91,7 +90,7 @@
   }
 
   @include mobile {
-    display: none;
+    display: block;
     border: none;
     background: none;
   }
@@ -105,9 +104,22 @@
   }
 
   @include mobile {
-    display: block;
+    display: none;
     border: none;
     background: none;
   }
 }
 
+.contacts-active .contacts__list {
+  display: flex;
+}
+
+.contacts-active .contacts__minus {
+  @include mobile {
+    display: flex;
+  }
+}
+
+.contacts-active .contacts__plus {
+  display: none;
+}

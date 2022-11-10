@@ -23,6 +23,7 @@
   max-width: 960px;
   min-height: 688px;
   padding-top: 306px;
+  padding-bottom: 20px;
 
   @include tablet {
     padding-top: 181px;
@@ -37,7 +38,7 @@
 }
 
 .hero__title {
-  font-family: "Roboto Condensed", "Arial", sanf-serif;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 80px;
   line-height: 94px;
@@ -82,7 +83,7 @@
 .hero__link {
   display: block;
   padding: 15px 29px;
-  font-family: "Roboto Condensed";
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   text-align: center;

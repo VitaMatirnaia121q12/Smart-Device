@@ -30,7 +30,7 @@
 
 .services__title {
   margin-top: 67px;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -71,7 +71,7 @@
 
 .services__list {
   display: grid;
-  grid-template-columns: 350px 350px 350px;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 85px;
   padding: 0;
   margin: 0;
@@ -118,21 +118,35 @@
   }
 }
 
+.services__link {
+  min-height: 650px;
+
+  @include tablet {
+    max-width: 670px;
+    min-height: 250px;
+    width: 100%;
+  }
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
 .services__item:first-child .services__link {
   display: block;
   padding: 50px 0 0 40px;
   background-color: #00b2ff;
-  background-image: url('../img/background/background-prodictiont.jpg');
+  background-image: url("../img/background/background-prodictiont.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   @include tablet {
-    background-image: url('../img/background/background-prodictiont-tablet.jpg');
+    background-image: url("../img/background/background-prodictiont-tablet.jpg");
     padding: 35px 0 0 45px;
   }
 
   @include mobile {
-    background-image: url('../img/background/background-prodictiont-mobile.jpg');
+    background-image: url("../img/background/background-prodictiont-mobile.jpg");
     padding: 27px 0 0 30px;
     min-height: 250px;
   }
@@ -142,17 +156,17 @@
   display: block;
   padding: 50px 0 0 40px;
   background-color: #041827;
-  background-image: url('../img/background/background-montage.jpg');
+  background-image: url("../img/background/background-montage.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   @include tablet {
-    background-image: url('../img/background/background-montage-tablet.jpg');
+    background-image: url("../img/background/background-montage-tablet.jpg");
     padding: 35px 0 0 45px;
   }
 
   @include mobile {
-    background-image: url('../img/background/background-montage-mobile.jpg');
+    background-image: url("../img/background/background-montage-mobile.jpg");
     padding: 27px 0 0 30px;
     min-height: 250px;
   }
@@ -162,17 +176,17 @@
   display: block;
   padding: 50px 0 0 40px;
   background-color: #041827;
-  background-image: url('../img/background/background-accessories.jpg');
+  background-image: url("../img/background/background-accessories.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   @include tablet {
-    background-image: url('../img/background/background-accessories-tablet.jpg');
+    background-image: url("../img/background/background-accessories-tablet.jpg");
     padding: 35px 0 0 45px;
   }
 
   @include mobile {
-    background-image: url('../img/background/background-accessories-mobile.jpg');
+    background-image: url("../img/background/background-accessories-mobile.jpg");
     padding: 27px 0 0 30px;
     min-height: 250px;
   }
@@ -180,9 +194,8 @@
 
 .services__name {
   margin: 0;
-  padding-bottom: 540px;
   max-width: 160px;
-  font-family: 'Roboto Condensed';
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -200,22 +213,22 @@
   }
 }
 
-.services__button {
+.services__link::after {
+  content: "";
   position: absolute;
   bottom: 0;
   right: 0;
+  background-color: #00b2ff;
+  background-image: url("data:image/svg+xml,%3Csvg width='5' height='10' viewBox='0 0 5 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.476196 8.80957L4.28572 5.00005L0.476196 1.19052' stroke='white' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
   min-width: 60px;
   min-height: 60px;
-  background: #00b2ff;
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 3px 0 0 0;
   border: none;
 
   @include mobile {
     min-width: 40px;
     min-height: 40px;
   }
-}
-
-.services__svg {
-  fill: none;
 }
